@@ -1,0 +1,3 @@
+Hostname: DESKTOP-4SR6CFV
+Platform: Windows 10
+Total number of log entries : 10

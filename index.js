@@ -1,0 +1,26 @@
+// Include os module and create its object
+const os = require('os');
+
+// return the endianness of system
+console.log("Endianness of system: " + os.endianness());
+
+// It returns hostname of system
+console.log("Hostname: " + os.hostname());
+
+// It return operating system name
+console.log("Operating system name: " + os.type());
+
+// It returns the platform of os
+console.log('operating system platform: ' + os.platform());
+
+// It returns the operating systems release.
+console.log('OS release : ' + os.release());
+
+const memoryUsage = process.memoryUsage();
+console.log({ memoryUsage });
+
+const v8 = require('node:v8');
+const { heap_size_limit } = v8.getHeapStatistics();
+const heapSizeInGB = heap_size_limit / (1024 * 1024 *1024 );
+console.log(`${heapSizeInGB} GB`);
+
